@@ -50,7 +50,7 @@ def stream_data():
     res = get_response(user_query, st.session_state.chat_history)
     for word in res:
         yield word + ""
-        time.sleep(0.1)
+        time.sleep(0.04)
             
 
 
